@@ -2,7 +2,7 @@ interface NavBarProps {
     cartCount: number;
 }
 
-function NavBar({ cartCount }: NavBarProps) {
+export default function NavBar({ cartCount }: NavBarProps) {
     return (
         <nav className="navbar">
             <a href="#" className="navbar-logo">
@@ -15,5 +15,3 @@ function NavBar({ cartCount }: NavBarProps) {
         </nav>
     );
 }
-
-export default NavBar;

@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import ItemsContainer from "./ItemsContainer";
 import CheckoutContainer from "./CheckoutContainer";
 
-function ThriftHappens() {
+export default function ThriftHappens() {
     const [products, setProducts] = useState<Product[]>(
         initialProducts.map(product => ({
             ...product,
@@ -160,5 +160,3 @@ function ThriftHappens() {
         </div>
     );
 }
-
-export default ThriftHappens;

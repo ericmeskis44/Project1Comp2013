@@ -6,7 +6,7 @@ interface ItemCardProps {
     onAddToCheckout: (productId: number, quantity: number) => void;
 }
 
-function ItemCard({ product, onAddToCheckout }: ItemCardProps) {
+export default function ItemCard({ product, onAddToCheckout }: ItemCardProps) {
     const [itemQuantity, setItemQuantity] = useState(0);
 
     useEffect(() => {
@@ -110,4 +110,3 @@ function ItemCard({ product, onAddToCheckout }: ItemCardProps) {
     );
 }
 
-export default ItemCard;

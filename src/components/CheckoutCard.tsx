@@ -6,7 +6,7 @@ interface CheckoutCardProps {
     onRemove: (productId: number) => void;
 }
 
-function CheckoutCard({
+export default function CheckoutCard({
     product,
     quantity,
     onRemove
@@ -47,5 +47,3 @@ function CheckoutCard({
         </article>
     );
 }
-
-export default CheckoutCard;

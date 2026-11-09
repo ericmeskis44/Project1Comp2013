@@ -6,7 +6,7 @@ interface ItemsContainerProps {
     onAddToCheckout: (productId: number, quantity: number) => void;
 }
 
-function ItemsContainer({
+export default function ItemsContainer({
     products,
     onAddToCheckout
 }: ItemsContainerProps) {
@@ -22,5 +22,3 @@ function ItemsContainer({
         </div>
     );
 }
-
-export default ItemsContainer;

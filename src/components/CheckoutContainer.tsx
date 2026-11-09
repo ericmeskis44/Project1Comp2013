@@ -9,7 +9,7 @@ interface CheckoutContainerProps {
     onEmptyCheckout: () => void;
 }
 
-function CheckoutContainer({
+export default function CheckoutContainer({
     cart,
     products,
     grandTotal,
@@ -65,5 +65,3 @@ function CheckoutContainer({
         </div>
     );
 }
-
-export default CheckoutContainer;
